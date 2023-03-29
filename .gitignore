@@ -1,0 +1,5 @@
+*.ipynb
+*.env
+*.jar
+*.json
+*.csv
