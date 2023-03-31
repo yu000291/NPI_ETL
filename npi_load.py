@@ -64,7 +64,7 @@ def send_email(npi_dict):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login('ada@logitech.com', os.getenv('EMAIL_FROM_PWD'))#read it from configuration file
+    server.login('EMAIL_FROM', os.getenv('EMAIL_FROM_PWD'))#read it from configuration file
     server.sendmail(FROM, TO, message)
     server.close()
 
